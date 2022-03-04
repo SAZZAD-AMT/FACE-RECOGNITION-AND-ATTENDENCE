@@ -38,18 +38,18 @@ def markAttendance(name):
  
 #### FOR CAPTURING SCREEN RATHER THAN WEBCAM
 # def captureScreen(bbox=(300,300,690+300,530+300)):
-#     capScr = np.array(ImageGrab.grab(bbox))
-#     capScr = cv2.cvtColor(capScr, cv2.COLOR_RGB2BGR)
-#     return capScr
+#      capScr = np.array(ImageGrab.grab(bbox))
+#      capScr = cv2.cvtColor(capScr, cv2.COLOR_RGB2BGR)
+#      return capScr
  
 encodeListKnown = findEncodings(images)
 print('Encoding Complete')
  
 cap = cv2.VideoCapture(0)
- 
+
 while True:
     success, img = cap.read()
-    #img = captureScreen()
+    # img = captureScreen()
     imgS = cv2.resize(img,(0,0),None,0.25,0.25)
     imgS = cv2.cvtColor(imgS, cv2.COLOR_BGR2RGB)
  
@@ -64,7 +64,7 @@ while True:
  
         if matches[matchIndex]:
             name = classNames[matchIndex].upper()
-            #print(name)
+            print(name)
             y1,x2,y2,x1 = faceLoc
             y1, x2, y2, x1 = y1*4,x2*4,y2*4,x1*4
             cv2.rectangle(img,(x1,y1),(x2,y2),(0,255,0),2)
@@ -73,4 +73,9 @@ while True:
             markAttendance(name)
  
     cv2.imshow('Webcam',img)
-    cv2.waitKey(1)
+    b=cv2.waitKey(1)
+    if b==31 or b==113:
+        print("End Face Detection")
+        break
+    
+
