@@ -1,7 +1,17 @@
 <h1>FACR-RECOGNITION-AND-ATTENDENCE</h1>
 
+![FACE DETECTION](https://github.com/SAZZAD-AMT/FACE-RECOGNITION-AND-ATTENDENCE/blob/main/Imagesbasic/Elon1.jpg)
+
+
 - ALL OF YOU PLEASE INSTALL PIP PERFECTLY.
 ---
+<li>What is used for face detection?</li>
+<p>Face detection is AI-based computer technology that is used to extract and identify human faces from digital images. When integrated with biometric security systems (particularly, facial recognition ones), this kind of technology is what makes it possible to monitor and track people in real-time.</p>
+<li>How does face detection work?</li>
+<p>A facial recognition system uses biometrics to map facial features from a photograph or video. It compares the information with a database of known faces to find a match. Facial recognition can help verify a person's identity, but it also raises privacy issues.</p>
+
+---
+
 # FACE RECOGNITION
 
 ```
