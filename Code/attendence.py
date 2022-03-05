@@ -43,7 +43,7 @@ def markAttendance(name):
 #      return capScr
  
 encodeListKnown = findEncodings(images)
-print('Encoding Complete')
+print('Encoding Complete- Press Q or q to CLOSE WEBCAM')
  
 cap = cv2.VideoCapture(0)
 
