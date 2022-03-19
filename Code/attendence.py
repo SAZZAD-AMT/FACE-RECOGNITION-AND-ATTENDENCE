@@ -5,7 +5,7 @@ import os
 from datetime import datetime
 # from PIL import ImageGrab
  
-path = 'ImagesAttendance'
+path = 'C:\\Users\\Hp\\OneDrive\\Desktop\\Python Project\\FACE RECOGNITION\\FACR-RECOGNITION-AND-ATTENDENCE\\ImagesAttendance'
 images = []
 classNames = []
 myList = os.listdir(path)
@@ -25,7 +25,7 @@ def findEncodings(images):
     return encodeList
  
 def markAttendance(name):
-    with open('Code\Att.csv','r+') as f:
+    with open('Att.csv','r+') as f:
         myDataList = f.readlines()
         nameList = []
         for line in myDataList:
