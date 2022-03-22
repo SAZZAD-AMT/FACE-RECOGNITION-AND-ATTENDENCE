@@ -1,4 +1,4 @@
-<h1>FACR-RECOGNITION-AND-ATTENDENCE</h1>
+<h1 align="center">FACR-RECOGNITION-AND-ATTENDENCE</h1>
 
 ![FACE DETECTION](https://github.com/SAZZAD-AMT/FACE-RECOGNITION-AND-ATTENDENCE/blob/main/Imagesbasic/facedetection.jpg)
 
